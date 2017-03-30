@@ -1,0 +1,44 @@
+{
+  "name": "micro-ratelimit",
+  "version": "0.0.1",
+  "description": "Rate-limiting middleware for micro",
+  "main": "lib/rate-limit.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dotcypress/micro-ratelimit.git"
+  },
+  "keywords": [
+    "rate limit",
+    "micro",
+    "microservices",
+    "middleware"
+  ],
+  "author": "Vitaly Domnikov <dotcypress@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dotcypress/micro-ratelimit/issues"
+  },
+  "homepage": "https://github.com/dotcypress/micro-ratelimit#readme",
+  "engines": {
+    "node": ">=6.2.1"
+  },
+  "files": [
+    "lib/rate-limit.js",
+    "lib/memory-store.js"
+  ],
+  "scripts": {
+    "test": "eslint . && ava test"
+  },
+  "dependencies": {
+    "debug": "^2.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.4.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.0"
+  }
+}
