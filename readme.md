@@ -26,7 +26,7 @@ module.exports = rateLimit((req, res) => {
 ```js
 const rateLimit = require('micro-ratelimit')
 
-// Limit example: 2 request per 10 sec
+// Limit example: 2 requests per 10 sec
 module.exports = rateLimit({window: 10000, limit: 2}, (req, res) => {
   return 'Hello world'
 })

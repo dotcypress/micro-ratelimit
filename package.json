@@ -1,6 +1,6 @@
 {
   "name": "micro-ratelimit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Rate-limiting middleware for micro",
   "main": "lib/rate-limit.js",
   "repository": {
@@ -28,9 +28,6 @@
   ],
   "scripts": {
     "test": "eslint . && ava test"
-  },
-  "dependencies": {
-    "debug": "^2.2.0"
   },
   "devDependencies": {
     "ava": "^0.18.2",
