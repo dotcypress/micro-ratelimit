@@ -30,12 +30,14 @@
     "test": "eslint . && ava test"
   },
   "devDependencies": {
-    "ava": "^0.18.2",
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.4.0",
-    "eslint-config-standard": "^7.1.0",
+    "ava": "^0.22.0",
+    "babel-eslint": "^8.0.0",
+    "eslint": "^4.7.1",
+    "eslint-config-standard": "^10.2.1",
     "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.0"
+    "eslint-plugin-standard": "^3.0.1"
   }
 }

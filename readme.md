@@ -27,7 +27,7 @@ module.exports = rateLimit((req, res) => {
 const rateLimit = require('micro-ratelimit')
 
 // Limit example: 2 requests per 10 sec
-module.exports = rateLimit({window: 10000, limit: 2}, (req, res) => {
+module.exports = rateLimit({ window: 10000, limit: 2, headers: true }, (req, res) => {
   return 'Hello world'
 })
 
@@ -40,6 +40,7 @@ module.exports = rateLimit({window: 10000, limit: 2}, (req, res) => {
 * `window`: how long to keep records of requests in memory in ms (default: 1 second)
 * `limit`: max number of requests during window (default: 1)
 * `keyGenerator`: key generator function (req -> client id)
+* `headers`: send rate limit headers (default: false)
 
 Default implementation of `keyGenerator`:
 
