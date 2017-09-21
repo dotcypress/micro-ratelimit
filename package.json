@@ -1,6 +1,6 @@
 {
   "name": "micro-ratelimit",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Rate-limiting middleware for micro",
   "main": "lib/rate-limit.js",
   "repository": {
